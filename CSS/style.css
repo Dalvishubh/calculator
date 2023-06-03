@@ -1,0 +1,132 @@
+body{
+    background-color:dimgray;
+    float: center;
+    margin: 20px 80px 200px 450px;
+}
+
+form{
+    border-style:outset;
+    width: 450px;
+    height: 560px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: -1px 5px 20px 20px black;    
+    padding: 20px;
+    margin-top: -500px;
+}
+
+
+#A3{ 
+    height: 20px;
+    width: 275px;
+    margin-bottom: 7px;
+    text-align: end;
+    font-size: x-large;
+    border-top: none;
+
+    
+}
+
+#B1{
+     height: 15px;
+     width: 275px;
+     border-bottom: none;
+     text-align: end;
+
+    }
+
+
+#A3:focus{
+    outline: none;
+}
+
+
+#B1{
+    outline: none;
+}
+
+
+input{
+    padding: 26px;
+    font-size: 21px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    margin: -1px;
+    border-color: whitesmoke;
+    box-shadow: -1px 1px 1px 2px black;
+}
+
+.A4{
+    font-size: 50px; 
+}
+
+
+.A5{
+    font-size: 60px; 
+}
+
+
+.A6{
+    font-size: 60px; 
+}
+
+
+.A7{
+    font-size: 60px; 
+}
+
+
+.A8{
+    font-size: 55px; 
+}
+
+
+.same{
+    background-color: red;
+    color: white;
+}
+
+.number{
+    background-color: blue;
+    color: white;
+}
+
+
+.history
+{
+ height: 500px;
+ width: 400px;
+ background-color: white;
+ margin: 0px 0px 0px -450px;  
+
+ overflow: auto;
+ border: 2px solid red;
+}
+
+
+
+
+#i{
+    font-size: x-large;
+    background-color: red;
+    border-color: grey;
+    position: fixed;
+    
+ }
+
+.btn-remove{
+    border: 2px solid;
+    width: 10%;
+    height: 10x;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
