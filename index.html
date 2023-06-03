@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/e417b3b7b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e417b3b7b3.js" crossorigin="anonymous"></script>
     
     <title>Document</title>
 </head>
 <body>
-  
-  <div class="history" id="hist" onclick="getHist()">   
+ <div id="A1">
     
-    <div class="btn-remove" onclick="clrhist()">Delete</div> 
-    <div id="hist-div"></div>
+    <div class="history" id="hist" onclick="gethist()">   
+    
+        <button class="BtnDel" onclick="clrhist()">Delete</button> 
+        <div id="hist-div"></div>
+      
+      </div>
+      
+
+
+<div id="A2">
+
+       <input type="text" value="" id="inequ">
+       <input type="text" value="0" id="inans" class="inputans"><br>
   
-  </div>
-   
-
-   <form id="A1">
-    <input type="text" id="B1" name="newdis" class="equation">
-    <input type="text" placeholder="0" id="A3" name="display" class="main">
-     
-     <div id="A2">    
-         
-        <div class="A4">
-             <input  onclick="getclr()" type="button" value="C" class="same">
-             <input  onclick="getop('()')" type="button" value="()" class="same">
-             <input  onclick="getHist()" type="button" value="H" class="same"> 
-             <input  onclick="getop('/')" type="button" value="/" class="same">
-        </div>   
-     
-       <div class="A5">
-          <input  onclick="getval('7')" type="button" value="7" class="number">
-          <input  onclick="getval('8')" type="button" value="8" class="number">
-          <input  onclick="getval('9')" type="button" value="9" class="number"> 
-          <input  onclick="getop('*')" type="button" value="*" class="same">
-       </div>
+    <div id="button">  
+        <button class="inputbtn" onclick="getclr()" style="color: blue;"> Clear Value</button>
+        <button class="inputbtn" onclick="gethist()" style="color: blue;">History</button><br>  
 
 
-       <div class="A6"> 
-          <input  onclick="getval('4')" type="button" value="4" class="number">
-          <input  onclick="getval('5')" type="button" value="5" class="number">
-          <input  onclick="getval('6')" type="button" value="6" class="number"> 
-          <input  onclick="getop('-')" type="button" value="-" class="same">
-        </div>
+       <button class="inputbtn" onclick="getval('7')"><b>7 </b></button>
+       <button class="inputbtn" onclick="getval('8')"><b>8 </b></button>
+       <button class="inputbtn" onclick="getval('9')"><b>9 </b></button>
+       <button class="inputbtn" onclick="getop('/')" style="color: yellow;"><b>/ </b></button><br>
 
-        <div class="A7">
-          <input  onclick="getval('1')" type="button" value="1" class="number">
-          <input  onclick="getval('2')" type="button" value="2" class="number">
-          <input  onclick="getval('3')" type="button" value="3" class="number"> 
-          <input  onclick="getop('+')" type="button" value="+" class="same">
-        </div>
+       <button class="inputbtn" onclick="getval('4')"><b>4 </b></button>
+       <button class="inputbtn" onclick="getval('5')"><b>5 </b></button>
+       <button class="inputbtn" onclick="getval('6')"><b>6 </b></button>
+       <button class="inputbtn" onclick="getop('*')" style="color: yellow;"><b>* </b></button><br>
 
-
-        <div class="A8">
-          <input  onclick="getval('00')" type="button" value="00" class="number">
-          <input  onclick="getval('0')" type="button" value="0" class="number">
-          <input  onclick="getval('.')" type="button" value="." class="number"> 
-          <input  onclick="getans('=')" type="button" value="=" class="same">
-     </div>
-
-     </div>
+        
+       <button class="inputbtn" onclick="getval('1')"><b>1 </b></button>
+       <button class="inputbtn" onclick="getval('2')"><b>2 </b></button>
+       <button class="inputbtn" onclick="getval('3')"><b>3 </b></button>
+       <button class="inputbtn" onclick="getop('+')" style="color: yellow;"><b>+ </b></button><br>
 
 
+       <button class="inputbtn" onclick="getval('00')" style="color: yellow;"><b>00 </b></button>
+       <button class="inputbtn" onclick="getval('.')" style="color: yellow;"><b>. </b></button>
+       <button class="inputbtn" onclick="getans()" style="color: yellow;"><b>= </b></button>
+       <button class="inputbtn" onclick="getop('-')" style="color: yellow;"><b>- </b></button><br>
 
-   </form>
+    </div>
+</div>
+</div>
 
-
-
-<script src="JS/index.js"></script>   
+<script src="JS/index.js"></script>
 </body>
 </html>

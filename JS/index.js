@@ -1,62 +1,79 @@
-var input=document.querySelector("#A3");
-var B=document.querySelector("#B1");
+var input= document.querySelector(".inputans");
+var A = document.querySelector("#inequ");
 
- var C=document.querySelector("#hist-div");
-var D=[];
-var E=[];
-
+var answer=[];
+var equation=[];
 
 function getval(num)
 {
-   if(input.value==0)
-   input.value=num;
-
-   else
-   input.value+=num;
+       if(input.value==0)
+         input.value = num;
+       else
+         input.value+=num;  
 
 }
 
+
 function getop(op)
 {
-  input.value+=op;
+  input.value += op;
+  
 }
 
 function getans()
 {
-    D.push(input.value+'=')
-    E.push(eval(input.value))
-
-    B.value=input.value+'='
-    input.value=eval(input.value)
+  answer.push(eval(input.value));   
+  equation.push(input.value+'=');
+  A.value=input.value+'='
+  input.value=eval(input.value)
 }
 
-function getclr()
-{
-    input.value=0;
-    B.value='';
-   
+function getclr(){
+  A.value="";
+  input.value=0
+}
+
+function gethist(){
   
-}
-
-function getHist()
-{
-  for(let i=0; i<E.length; i++)
+  var history=document.querySelector('#hist');
+  for(let i=0; i<answer.length; i++)
   {
-    C.innerHTML+="<br><h1>"+D[i]+"</h1><h2>"+E[i]+"</h2>"
-  
+    history.innerHTML+="<h1>"+equation[i]+"</h1><h3>"+answer[i]+"</h3>";
   }
   
-  
 }
-
 
 function clrhist()
 {
-  C.innerHTML='';
-   D=[];
-   E=[];
-  
+  var history=document.querySelector('#hist');
+  history.innerHTML="";
+  answer=[];
+  equation=[];
 }
+
+// function gethist()
+// {
+//   var a=true
+//    if(a == true)
+//   {
+//     document.querySelector("#hist"); 
+//     a=false;  
+//   }
+//   else if(a == false)
+//   {
+//     document.querySelector("#A2")
+//     a=true;
+//     }
+
+
+// }
+
+
+
+
+
+
+
 
 
 
